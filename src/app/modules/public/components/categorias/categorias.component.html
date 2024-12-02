@@ -1,1 +1,20 @@
-<p>categorias works!</p>
+<div class="row g-0">
+    <p-carousel [value]="carouselData" [numVisible]="3" [numScroll]="3" [circular]="false" class="custom-carousel">
+        <ng-template let-product pTemplate="item">
+            <div class="surface-border border-round m-2 text-center py-5 px-3">
+                <div class="mb-3">
+                    <img src="{{ product.image }}" [alt]="product.name" class="w-6 shadow-2" width="300px" height="300px" />
+                </div>
+                <div>
+                    <h4 classhow="mb-1">hola</h4>
+                    <h6 class="mt-0 mb-3">$4.50</h6>
+                    <p-tag [value]="product.inventoryStatus" [severity]="'secondary'"></p-tag>
+                    <div class="mt-5 flex align-items-center justify-content-center gap-2">
+                        <p-button icon="pi pi-search" [rounded]="true" />
+                        <p-button icon="pi pi-star-fill" [rounded]="true" severity="secondary" />
+                    </div>
+                </div>
+            </div>
+        </ng-template>
+    </p-carousel>
+</div>

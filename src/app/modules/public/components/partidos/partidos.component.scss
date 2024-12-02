@@ -1,0 +1,21 @@
+.carousel{
+    background-color: var(--color-main1);
+}
+
+.p-button-rounded{
+    border-radius: 50%;
+}
+
+.surface-border {
+    border: 1px solid #dfe7ef
+  }
+  
+.border-round {
+    border-radius: 10px; /* You can adjust the value to control the roundness */
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+  }
+
+.p-carousel-content .p-carousel-container .p-carousel-prev {
+    color: #dfe7ef;
+}
