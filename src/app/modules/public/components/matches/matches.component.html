@@ -1,0 +1,51 @@
+<div class="row-g-0">
+    <div class="col-12">
+        
+        <div class="row g-0">
+
+        </div>
+    
+    </div>
+
+    <div class="col-12">
+        <div class="row g-0">
+            <div class="col-12">
+
+                <p-carousel [value]="carouselData" [numVisible]="3" [numScroll]="3" [circular]="false">
+                    <ng-template let-product pTemplate="item">
+                        <div class="border-1 surface-border border-round m-2 text-center py-5 px-3">
+                            <div class="row g-0">
+
+                                <div class="col-12">
+                                    <div class="row g-0">
+                                        <div class="col-6 py-5">
+                                            <img src="../../../../../assets/images/public/escudo_feo.png" width="150px" height="150px">
+                                        </div>
+                                        <!-- <div class="col-4 py-5">
+                                            -
+                                        </div> -->
+
+                                        <div class="col-6 py-5">
+                                            <img src="../../../../../assets/images/public/escudo_feo.png" width="150px" height="150px">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div>
+                                <h4 class="mb-1 text-white">VS</h4>
+                                <h6 class="mt-0 mb-3 text-white">11/04/2024</h6>
+                                <p-tag [value]="product.inventoryStatus" [severity]="'secondary'"></p-tag>
+                                <div class="mt-5 flex align-items-center justify-content-center gap-2">
+                                    <p-button icon="pi pi-search" class="p-button-rounded"/>
+                                </div>
+                            </div>
+                        </div>
+                    </ng-template>
+                </p-carousel>
+            </div>
+        </div>
+    </div>
+</div>
+

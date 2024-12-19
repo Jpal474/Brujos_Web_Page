@@ -1,29 +1,33 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HomeComponent } from './components/home/home.component';
-import { AdminComponent } from './components/admin/admin.component';
-import { NavbarComponent } from './components/navbar/navbar.component';
-import { JugadoresComponent } from './components/jugadores/jugadores.component';
-import { CategoriasComponent } from './components/categorias/categorias.component';
-import { PartidosComponent } from './components/partidos/partidos.component';
-import { EstadisticasComponent } from './components/estadisticas/estadisticas.component';
+import { AddPlayerComponent } from './components/add-player/add-player.component';
+import { CategoriesComponent } from './components/categories/categories.component';
+import { StatisticsComponent } from './components/statistics/statistics.component';
+import { PlayersComponent } from './components/players/players.component';
 import { InfoComponent } from './components/info/info.component';
+import { MatchesComponent } from './components/matches/matches.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { HomeComponent } from './components/home/home.component';
+import { SharedModule } from 'primeng/api';
 
 
 
 @NgModule({
   declarations: [
-    HomeComponent,
-    AdminComponent,
+    AddPlayerComponent,
+    CategoriesComponent,
+    StatisticsComponent,
+    PlayersComponent,
+    InfoComponent,
+    MatchesComponent,
     NavbarComponent,
-    JugadoresComponent,
-    CategoriasComponent,
-    PartidosComponent,
-    EstadisticasComponent,
-    InfoComponent
+    HomeComponent,
+    
   ],
   imports: [
-    CommonModule
-  ]
+    CommonModule,
+    SharedModule,
+    SharedModule,
+]
 })
 export class AdminModule { }

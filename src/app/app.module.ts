@@ -5,6 +5,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PublicModule } from './modules/public/public.module';
 import { ButtonModule } from 'primeng/button';
+import { SharedModule } from './modules/shared/shared.module';
+import { AdminModule } from './modules/admin/admin.module';
 
 @NgModule({
   declarations: [
@@ -14,6 +16,8 @@ import { ButtonModule } from 'primeng/button';
     BrowserModule,
     AppRoutingModule,
     PublicModule,
+    AdminModule,
+    SharedModule,
     ButtonModule
   ],
   providers: [],

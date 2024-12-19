@@ -10,7 +10,6 @@ import { PartidoComponent } from './components/partido/partido.component';
 import { EstadisticasComponent } from './components/estadisticas/estadisticas.component';
 import { InfoComponent } from './components/info/info.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
-import { PublicComponent } from './components/public/public.component';
 import { RouterModule } from '@angular/router';
 import { LandingComponent } from './components/landing/landing.component';
 import { SharedModule } from '../shared/shared.module';
@@ -19,6 +18,12 @@ import { ButtonModule } from 'primeng/button';
 import { TagModule } from 'primeng/tag';
 import { PersonalComponent } from './components/personal/personal.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { CategoriesComponent } from './components/categories/categories.component';
+import { StatisticsComponent } from './components/statistics/statistics.component';
+import { MatchComponent } from './components/match/match.component';
+import { MatchesComponent } from './components/matches/matches.component';
+import { PlayerComponent } from './components/player/player.component';
+import { PlayersComponent } from './components/players/players.component';
 
 
 
@@ -26,18 +31,17 @@ import { FooterComponent } from './components/footer/footer.component';
   declarations: [
     LoginComponent,
     HomeComponent,
-    CategoriasComponent,
-    JugadoresComponent,
-    PartidosComponent,
-    JugadorComponent,
-    PartidoComponent,
-    EstadisticasComponent,
     InfoComponent,
     NavbarComponent,
-    PublicComponent,
     LandingComponent,
     PersonalComponent,
     FooterComponent,
+    CategoriesComponent,
+    StatisticsComponent,
+    MatchComponent,
+    MatchesComponent,
+    PlayerComponent,
+    PlayersComponent
   ],
   imports: [
     CommonModule,
